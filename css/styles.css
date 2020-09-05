@@ -338,7 +338,189 @@ template {
 }
 
 /* ============================================= */
+/*                   Base                        */
+/* ============================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0abdc6;
+  color: #a2f6fa;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "main-header" "main-content" "footer";
+}
+
+.main-header {
+  grid-area: main-header;
+}
+
+.container {
+  grid-area: main-content;
+}
+
+.contact {
+  grid-area: footer;
+}
+
+/* ============================================= */
+/*                   Typography                  */
+/* ============================================= */
+a {
+  text-decoration: none;
+}
+
+/* ============================================= */
 /*                   Header                      */
 /* ============================================= */
+.main-header {
+  background-color: #133e7c;
+  color: #913cb1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-header .nav {
+  width: 95%;
+}
+.main-header .nav .nav-list {
+  list-style: none;
+  padding: 0;
+}
+.main-header .nav .nav-list .nav-item {
+  margin: 5px auto;
+  background-color: #0abdc6;
+  text-align: center;
+  border-radius: 5px;
+}
+.main-header .nav .nav-list .nav-item:hover {
+  background-color: #10e8f3;
+}
+.main-header .nav .nav-list .nav-item a {
+  font-size: 1.2rem;
+  padding: 20px 0;
+  display: block;
+}
+.main-header .nav .nav-list .nav-item a:link {
+  color: #913cb1;
+}
+.main-header .nav .nav-list .nav-item a:hover {
+  color: #a959c7;
+}
+.main-header .nav .nav-list .nav-item a:visited {
+  color: #913cb1;
+}
+.main-header .nav .nav-list .nav-item a:active {
+  color: #722f8b;
+}
+
+/* ============================================= */
+/*                 About Section                 */
+/* ============================================= */
+.about {
+  margin: 50px 15px;
+}
+.about .general-info {
+  margin-bottom: 50px;
+}
+.about .profile-picture {
+  margin-top: 50px;
+  text-align: center;
+}
+.about .profile-picture .me {
+  width: 100%;
+}
+
+/* ============================================= */
+/*              Projects Section                 */
+/* ============================================= */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 50px 15px;
+}
+.projects .project {
+  background-color: #133e7c;
+  border-radius: 5px;
+}
+
+.project-link img {
+  width: 100%;
+}
+
+/* ============================================= */
+/*              Contact Section                  */
+/* ============================================= */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  border-top: 2px solid #913cb1;
+}
+.contact .contact-links {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.contact .contact-links .icon {
+  width: 30px;
+  height: auto;
+}
+
+/* ============================================= */
+/*                Media Queries                  */
+/* ============================================= */
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-list .nav-item {
+    display: inline-block;
+    width: 30%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about .general-info {
+    margin-bottom: 0;
+  }
+  .about .profile-picture {
+    margin-top: 0;
+  }
+  .about .skills {
+    margin: 0 50px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .main-header {
+    flex-direction: row;
+  }
+
+  .projects {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .title {
+    margin-left: 15px;
+    width: 550px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

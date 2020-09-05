@@ -2,3 +2,47 @@
 /*                   Header                      */
 /* ============================================= */
 
+
+
+.main-header {
+    background-color: $primary;
+    color: $secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .nav {
+        width: 95%;
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            .nav-item {
+                margin: 5px auto;
+                background-color: $tertiary;
+                text-align: center;
+                border-radius: 5px;
+                &:hover {
+                    background-color: lighten($tertiary, 10%);
+                }
+                a {
+                    font-size: 1.2rem;
+                    padding: 20px 0;
+                    display: block;
+                }
+                a:link {
+                    color: $secondary;
+                }
+                a:hover {
+                    color: lighten($secondary, 10%);
+                }
+                a:visited {
+                    color: $secondary;
+                }
+                a:active {
+                    color: darken($secondary, 10%)
+                }
+            }
+        }
+    }
+    
+}
+

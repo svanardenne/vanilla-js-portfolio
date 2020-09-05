@@ -1,0 +1,30 @@
+/* ============================================= */
+/*                   Base                        */
+/* ============================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $tertiary;
+    color: lighten($tertiary, 40%);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "main-header"
+    "main-content"
+    "footer";
+}
+
+.main-header {
+    grid-area: main-header;
+}
+
+.container {
+    grid-area: main-content;
+}
+
+.contact {
+    grid-area: footer;
+}
+

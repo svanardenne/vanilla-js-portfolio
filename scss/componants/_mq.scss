@@ -1,0 +1,50 @@
+/* ============================================= */
+/*                Media Queries                  */
+/* ============================================= */
+
+@media(min-width: 768px) {
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        .nav-item {
+            display: inline-block;
+            width: 30%;
+        }
+    }
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .general-info {
+            margin-bottom: 0;
+        }
+        .profile-picture {
+            margin-top: 0;
+        }
+        .skills {
+            margin: 0 50px;
+        }
+    }
+    .projects {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media(min-width: 1024px) {
+    .main-header {
+        flex-direction: row;
+    }
+    .projects {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .title {
+        margin-left: 15px;
+        width: 550px;
+    }
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
