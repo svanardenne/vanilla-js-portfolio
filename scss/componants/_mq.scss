@@ -29,7 +29,9 @@
         
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    html {
+        margin-top: 185px;
+    }
 }
 
 @media(min-width: 1024px) {
@@ -37,14 +39,15 @@
         flex-direction: row;
     }
     .projects {
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
     }
     .title {
         margin-left: 15px;
         width: 550px;
     }
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
+    html {
+        margin-top: 110px;
     }
 }

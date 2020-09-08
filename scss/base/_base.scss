@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
+html {
+    margin-top: 320px;
+}
+
 body {
     background-color: $tertiary;
-    color: lighten($tertiary, 40%);
+    color: $tertiary-light;
     display: grid;
     grid-template-rows: auto;
     grid-template-areas: 
