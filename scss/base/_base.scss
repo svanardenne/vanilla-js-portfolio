@@ -20,15 +20,29 @@ body {
     "footer";
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .main-header {
     grid-area: main-header;
 }
 
-.container {
+.container-main {
     grid-area: main-content;
 }
 
 .contact {
     grid-area: footer;
 }
-
+a {
+    padding: 20px 0;
+    display: block;
+}
+a:link {
+    color: $tertiary-light;
+}
+a:visited {
+    color: $tertiary-light;
+}

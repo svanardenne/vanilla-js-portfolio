@@ -349,23 +349,41 @@ html {
 }
 
 body {
-  background-color: #0abdc6;
-  color: #a2f6fa;
+  background-color: #3d3d3d;
+  color: #a3a3a3;
   display: grid;
   grid-template-rows: auto;
   grid-template-areas: "main-header" "main-content" "footer";
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .main-header {
   grid-area: main-header;
 }
 
-.container {
+.container-main {
   grid-area: main-content;
 }
 
 .contact {
   grid-area: footer;
+}
+
+a {
+  padding: 20px 0;
+  display: block;
+}
+
+a:link {
+  color: #a3a3a3;
+}
+
+a:visited {
+  color: #a3a3a3;
 }
 
 /* ============================================= */
@@ -379,8 +397,8 @@ a {
 /*                   Header                      */
 /* ============================================= */
 .main-header {
-  background-color: #133e7c;
-  color: #a2f6fa;
+  background-color: #000000;
+  color: #a3a3a3;
   width: 100%;
   display: flex;
   position: fixed;
@@ -388,6 +406,12 @@ a {
   z-index: 1000;
   flex-direction: column;
   align-items: center;
+}
+.main-header .title a:link {
+  color: #a3a3a3;
+}
+.main-header .title a:visited {
+  color: #a3a3a3;
 }
 .main-header .nav {
   width: 95%;
@@ -398,38 +422,42 @@ a {
 }
 .main-header .nav .nav-list .nav-item {
   margin: 5px auto;
-  background-color: #0abdc6;
+  background-color: #3d3d3d;
   text-align: center;
   border-radius: 5px;
   transition: background-color 0.5s ease-out;
 }
 .main-header .nav .nav-list .nav-item:hover {
-  background-color: #10e8f3;
+  background-color: #575757;
 }
 .main-header .nav .nav-list .nav-item a {
   font-size: 1.2rem;
-  padding: 20px 0;
-  display: block;
-}
-.main-header .nav .nav-list .nav-item a:link {
-  color: #a2f6fa;
-}
-.main-header .nav .nav-list .nav-item a:visited {
-  color: #a2f6fa;
 }
 
 /* ============================================= */
 /*                 About Section                 */
 /* ============================================= */
-.about {
+.info {
   margin: 50px 15px;
 }
-.about .general-info {
+.info .general-info {
   margin-bottom: 50px;
 }
-.about .profile-picture {
+.info .profile-picture {
   margin-top: 50px;
   text-align: center;
+}
+
+.about-info {
+  margin: 50px 15px;
+}
+.about-info .profile-image {
+  width: 50%;
+  margin: 0 auto;
+}
+.about-info .profile-image img {
+  border: 5px solid #000000;
+  border-radius: 30px;
 }
 
 /* ============================================= */
@@ -442,7 +470,7 @@ a {
   margin: 50px 15px;
 }
 .projects .project {
-  background-color: #133e7c;
+  background-color: #000000;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
@@ -468,7 +496,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  border-top: 2px solid #913cb1;
+  border-top: 2px solid #000000;
 }
 .contact .contact-links {
   display: flex;
@@ -494,19 +522,15 @@ a {
     width: 30%;
   }
 
-  .about {
+  .info {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 50px;
   }
-  .about .general-info {
-    margin-bottom: 0;
-  }
-  .about .profile-picture {
-    margin-top: 0;
-  }
-  .about .skills {
-    margin: 0 50px;
+  .info .general-info {
+    margin-right: 30px;
   }
 
   .projects {
@@ -516,6 +540,24 @@ a {
   html {
     margin-top: 185px;
   }
+
+  .about-info {
+    margin: 50px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .about-info .about-general-info {
+    flex-basis: 50%;
+    margin-right: 15px;
+  }
+  .about-info .profile-image {
+    flex-basis: 40%;
+    margin: 0 auto;
+  }
+  .about-info .profile-image img {
+    border: 5px solid #000000;
+  }
 }
 @media (min-width: 1024px) {
   .main-header {
@@ -524,13 +566,18 @@ a {
 
   .projects {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     grid-template-columns: repeat(4, 1fr);
   }
 
   .title {
     margin-left: 15px;
     width: 550px;
+  }
+
+  .info {
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   html {
