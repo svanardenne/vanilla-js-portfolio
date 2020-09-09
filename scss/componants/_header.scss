@@ -38,8 +38,8 @@
                 margin: 5px auto;
                 background-color: $primary;
                 text-align: center;
-                border-bottom: 5px solid $purple;
                 border-radius: 5px;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                 transition: background-color .5s ease-out;
                 &:hover {
                     background-color: lighten($secondary, 10%);
@@ -47,6 +47,15 @@
                 a {
                     font-size: 1.2rem;
                 }
+            }
+            .nav-item:nth-child(1) {
+                border-bottom: 5px solid $purple;
+            }
+            .nav-item:nth-child(2) {
+                border-bottom: 5px solid #c2cf78;
+            }
+            .nav-item:nth-child(3) {
+                border-bottom: 5px solid #cf7e78;
             }
             .project-link {
                 cursor: pointer;
