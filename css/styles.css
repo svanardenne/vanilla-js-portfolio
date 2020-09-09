@@ -458,7 +458,7 @@ a {
   margin: 0 auto;
 }
 .about-info .profile-image img {
-  border: 5px solid #141b2d;
+  border: 5px solid #8578cf;
   border-radius: 30px;
 }
 
@@ -515,6 +515,62 @@ a {
 }
 
 /* ============================================= */
+/*               Modal Container                 */
+/* ============================================= */
+.overlay {
+  width: 100vw;
+  height: 150vh;
+  background: rgba(133, 120, 207, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 5000;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-container {
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  background-color: #1f2940;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.modal-container .project-title,
+.modal-container .project-text {
+  padding: 0 15px;
+}
+.modal-container .left-arrow,
+.modal-container .right-arrow {
+  cursor: pointer;
+  font-weight: 1000;
+  font-size: 3rem;
+  color: #141b2d;
+  position: absolute;
+  top: 40%;
+  transition: color 0.5s ease-out;
+}
+.modal-container .left-arrow:hover,
+.modal-container .right-arrow:hover {
+  color: #243050;
+}
+.modal-container .left-arrow {
+  left: -30px;
+}
+.modal-container .right-arrow {
+  right: -30px;
+}
+
+/* ============================================= */
 /*                Media Queries                  */
 /* ============================================= */
 @media (min-width: 768px) {
@@ -560,8 +616,19 @@ a {
     flex-basis: 40%;
     margin: 0 auto;
   }
-  .about-info .profile-image img {
-    border: 5px solid #141b2d;
+
+  .modal-container {
+    width: 70%;
+  }
+  .modal-container .left-arrow,
+.modal-container .right-arrow {
+    font-size: 4rem;
+  }
+  .modal-container .left-arrow {
+    left: -40px;
+  }
+  .modal-container .right-arrow {
+    right: -40px;
   }
 }
 @media (min-width: 1024px) {
@@ -587,6 +654,20 @@ a {
 
   html {
     margin-top: 110px;
+  }
+
+  .modal-container {
+    width: 60%;
+  }
+  .modal-container .left-arrow,
+.modal-container .right-arrow {
+    font-size: 5rem;
+  }
+  .modal-container .left-arrow {
+    left: -50px;
+  }
+  .modal-container .right-arrow {
+    right: -50px;
   }
 }
 

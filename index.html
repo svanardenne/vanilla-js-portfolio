@@ -15,7 +15,7 @@
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="about.html">About</a></li>
-          <li class="nav-item"><a href="#">Projects</a></li>
+          <li class="nav-item project-link"><a>Projects</a></li>
           <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -119,6 +119,17 @@ floats and media queries for layout and fixed positioning for a sticky footer.</
       </section>
     </main>
 
+    <div class="overlay hidden">
+      <div class="modal-container">
+        <h3 class="project-title">Personal Profile</h3>
+        <img src="img/project-1.png">
+        <p class="project-text">A personal profile page utilizing basic HTML and CSS</p>
+        <span class="left-arrow"><</span>
+        <span class="right-arrow">></span>
+      </div>
+      
+    </div>
+
     <footer id="contact" class="contact">
       <h3>Contact</h3>
       <div class="contact-links">
@@ -129,5 +140,6 @@ floats and media queries for layout and fixed positioning for a sticky footer.</
     </footer>
 
     <script src="js/nav.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

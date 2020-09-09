@@ -40,11 +40,22 @@
         .profile-image {
             flex-basis: 40%;
             margin: 0 auto;
-            img {
-                border: 5px solid $primary;
-            }
         }
     }
+    .modal-container {
+        width: 70%;
+        .left-arrow,
+        .right-arrow {
+            font-size: 4rem;
+        }
+        .left-arrow {
+            left: -40px;
+        }
+        .right-arrow {
+            right: -40px;
+        }
+    }
+    
 }
 
 @media(min-width: 1024px) {
@@ -67,4 +78,18 @@
     html {
         margin-top: 110px;
     }
+    .modal-container {
+        width: 60%;
+        .left-arrow,
+        .right-arrow {
+            font-size: 5rem;
+        }
+        .left-arrow {
+            left: -50px;
+        }
+        .right-arrow {
+            right: -50px;
+        }
+    }
+    
 }

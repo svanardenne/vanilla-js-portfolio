@@ -1,0 +1,54 @@
+/* ============================================= */
+/*               Modal Container                 */
+/* ============================================= */
+
+.overlay {
+    width: 100vw;
+    height: 150vh;
+    background: rgba(133, 120, 207, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 5000;
+}
+.hidden {
+    display: none;
+}
+.modal-container {
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    background-color: $secondary;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    .project-title,
+    .project-text {
+        padding: 0 15px;
+    }
+    .left-arrow,
+    .right-arrow {
+        cursor: pointer;
+        font-weight: 1000;
+        font-size: 3rem;
+        color: $primary;
+        position: absolute;
+        top: 40%;
+        transition: color .5s ease-out;
+    }
+    .left-arrow:hover,
+    .right-arrow:hover {
+        color: lighten($primary, 10%)
+    }
+    .left-arrow {
+        left: -30px;
+    }
+    .right-arrow {
+        right: -30px;
+    }
+}
