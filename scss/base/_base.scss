@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    background-color: $tertiary;
-    color: $tertiary-light;
+    background-color: $off-white;
+    color: $text;
     display: grid;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -41,8 +41,8 @@ a {
     display: block;
 }
 a:link {
-    color: $tertiary-light;
+    color: $off-white;
 }
 a:visited {
-    color: $tertiary-light;
+    color: $off-white;
 }

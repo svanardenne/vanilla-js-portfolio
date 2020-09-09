@@ -6,7 +6,7 @@
 
 .main-header {
     background-color: $primary;
-    color: $tertiary-light;
+    color: $off-white;
     width: 100%;
     display: flex;
     position: fixed;
@@ -16,10 +16,10 @@
     align-items: center;
     .title {
         a:link {
-            color: $tertiary-light;
+            color: $off-white;
         }
         a:visited {
-            color: $tertiary-light;
+            color: $off-white;
         }
     }
     .nav {
@@ -29,12 +29,12 @@
             padding: 0;
             .nav-item {
                 margin: 5px auto;
-                background-color: $tertiary;
+                background-color: $secondary;
                 text-align: center;
                 border-radius: 5px;
                 transition: background-color .5s ease-out;
                 &:hover {
-                    background-color: lighten($tertiary, 10%);
+                    background-color: lighten($secondary, 10%);
                 }
                 a {
                     font-size: 1.2rem;

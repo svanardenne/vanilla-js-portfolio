@@ -349,8 +349,8 @@ html {
 }
 
 body {
-  background-color: #3d3d3d;
-  color: #a3a3a3;
+  background-color: #f8f8ff;
+  color: #797979;
   display: grid;
   grid-template-rows: auto;
   grid-template-areas: "main-header" "main-content" "footer";
@@ -379,11 +379,11 @@ a {
 }
 
 a:link {
-  color: #a3a3a3;
+  color: #f8f8ff;
 }
 
 a:visited {
-  color: #a3a3a3;
+  color: #f8f8ff;
 }
 
 /* ============================================= */
@@ -397,8 +397,8 @@ a {
 /*                   Header                      */
 /* ============================================= */
 .main-header {
-  background-color: #000000;
-  color: #a3a3a3;
+  background-color: #13141d;
+  color: #f8f8ff;
   width: 100%;
   display: flex;
   position: fixed;
@@ -408,10 +408,10 @@ a {
   align-items: center;
 }
 .main-header .title a:link {
-  color: #a3a3a3;
+  color: #f8f8ff;
 }
 .main-header .title a:visited {
-  color: #a3a3a3;
+  color: #f8f8ff;
 }
 .main-header .nav {
   width: 95%;
@@ -422,13 +422,13 @@ a {
 }
 .main-header .nav .nav-list .nav-item {
   margin: 5px auto;
-  background-color: #3d3d3d;
+  background-color: #3b3f5b;
   text-align: center;
   border-radius: 5px;
   transition: background-color 0.5s ease-out;
 }
 .main-header .nav .nav-list .nav-item:hover {
-  background-color: #575757;
+  background-color: #4f547a;
 }
 .main-header .nav .nav-list .nav-item a {
   font-size: 1.2rem;
@@ -456,7 +456,7 @@ a {
   margin: 0 auto;
 }
 .about-info .profile-image img {
-  border: 5px solid #000000;
+  border: 5px solid #13141d;
   border-radius: 30px;
 }
 
@@ -470,10 +470,13 @@ a {
   margin: 50px 15px;
 }
 .projects .project {
-  background-color: #000000;
+  background-color: #13141d;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+}
+.projects .project .project-title {
+  margin-top: 0;
 }
 .projects .project .project-title,
 .projects .project .project-text {
@@ -496,7 +499,7 @@ a {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  border-top: 2px solid #000000;
+  border-top: 2px solid #13141d;
 }
 .contact .contact-links {
   display: flex;
@@ -556,7 +559,7 @@ a {
     margin: 0 auto;
   }
   .about-info .profile-image img {
-    border: 5px solid #000000;
+    border: 5px solid #13141d;
   }
 }
 @media (min-width: 1024px) {
