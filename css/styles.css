@@ -435,6 +435,9 @@ a {
 .main-header .nav .nav-list .nav-item a {
   font-size: 1.2rem;
 }
+.main-header .nav .nav-list .project-link {
+  cursor: pointer;
+}
 
 /* ============================================= */
 /*                 About Section                 */
