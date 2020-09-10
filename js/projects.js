@@ -81,7 +81,7 @@ function createCards() {
             </div>
         `
     }
-    if (window.location.href === 'file:///home/shaun/coding/projects/techdegree-project-9/index.html') {
+    if (projects) {
         projects.innerHTML = inner;
     }
 }
@@ -123,7 +123,7 @@ projectLink.addEventListener('click', () => {
 
 //Adds modal window to screen on click for the project cards
 const project = document.getElementsByClassName('project');
-if (window.location.href === 'file:///home/shaun/coding/projects/techdegree-project-9/index.html') {
+if (projects) {
     projects.addEventListener('click', (e) => {
         let click = e.target.parentNode;
         for (let i = 0; i < project.length; i++) {
