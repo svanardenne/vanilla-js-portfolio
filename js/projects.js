@@ -81,7 +81,9 @@ function createCards() {
             </div>
         `
     }
-    projects.innerHTML = inner;
+    if (window.location.href === 'https://svanardenne.github.io/index.html') {
+        projects.innerHTML = inner;
+    }
 }
 
 //Modal Content
@@ -121,19 +123,21 @@ projectLink.addEventListener('click', () => {
 
 //Adds modal window to screen on click for the project cards
 const project = document.getElementsByClassName('project');
-projects.addEventListener('click', (e) => {
-    let click = e.target.parentNode;
-    for (let i = 0; i < project.length; i++) {
-        if (click === project[i]) {
-            const card = e.target.closest(".project");
-            const index = card.getAttribute('data-index');
-            modalIndex = index;
-            console.log(modalIndex);
-            overlay.style.display = "block";
-            modalWindow.innerHTML = displayModal(i);
+if (window.location.href === 'https://svanardenne.github.io/index.html') {
+    projects.addEventListener('click', (e) => {
+        let click = e.target.parentNode;
+        for (let i = 0; i < project.length; i++) {
+            if (click === project[i]) {
+                const card = e.target.closest(".project");
+                const index = card.getAttribute('data-index');
+                modalIndex = index;
+                console.log(modalIndex);
+                overlay.style.display = "block";
+                modalWindow.innerHTML = displayModal(i);
+            }
         }
-    }
-});
+    });
+}
 
 //Removes modal window when the user clicks outside of the modal window
 overlay.addEventListener('click', (e) => {
