@@ -97,7 +97,7 @@ function displayModal(index) {
         <div class="project">
             <a class="project-link" href="${projectLink}" target="_blank">
                 <h3 class="project-title">${projectTitle}</h3>
-                <img src="${projectImage}">
+                <img class="project-image" src="${projectImage}">
                 <p class="project-text">${projectText}</p>
             </a>
             <span class="left-arrow"><</span>
@@ -118,6 +118,9 @@ window.addEventListener('load', createCards());
 //Adds modal window to screen on click for the project link
 projectLink.addEventListener('click', () => {
     overlay.style.display = "block";
+    setTimeout(() => {
+        overlay.style.opacity = "1";
+    }, 1);
     modalWindow.innerHTML = displayModal(0);
 });
 
@@ -133,6 +136,9 @@ if (projects) {
                 modalIndex = index;
                 console.log(modalIndex);
                 overlay.style.display = "block";
+                setTimeout(() => {
+                    overlay.style.opacity = "1";
+                }, 1);
                 modalWindow.innerHTML = displayModal(i);
             }
         }
@@ -142,7 +148,10 @@ if (projects) {
 //Removes modal window when the user clicks outside of the modal window
 overlay.addEventListener('click', (e) => {
     if (e.target === overlay) {
-        overlay.style.display = "none";
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+            overlay.style.display = "none";
+        }, 500);
     }
 });
 

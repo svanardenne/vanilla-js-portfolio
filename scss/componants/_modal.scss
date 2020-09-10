@@ -3,6 +3,7 @@
 /* ============================================= */
 
 .overlay {
+    opacity: 0;
     width: 100vw;
     height: 150vh;
     background: rgba(133, 120, 207, 0.3);
@@ -12,6 +13,7 @@
     padding: 0;
     margin: 0;
     z-index: 5000;
+    transition: opacity .5s ease-out;
 }
 .hidden {
     display: none;
@@ -50,5 +52,13 @@
     }
     .right-arrow {
         right: -30px;
+    }
+    .right-arrow::selection,
+    .left-arrow::selection,
+    .project-image::selection,
+    .project-text::selection,
+    .project-title::selection {
+        color: none;
+        background: none;
     }
 }
