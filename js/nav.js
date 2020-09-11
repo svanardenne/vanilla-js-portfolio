@@ -14,7 +14,7 @@ if (window.innerWidth < 768) {
         if (prevScrollpos > currentScrollPos) {
             mainHeader.style.maxHeight = '362px';
         } else {
-            mainHeader.style.maxHeight = '119px';
+            mainHeader.style.maxHeight = '80px';
         }
         prevScrollpos = currentScrollPos;
     });
