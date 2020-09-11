@@ -16,6 +16,9 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: max-height .2s ease-out;
     overflow: hidden;
+    .title {
+        display: inline-block;
+    }
     .nav {
         width: 95%;
         opacity: 1;
@@ -32,6 +35,10 @@
                 border-radius: 5px;
                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                 transition: background-color .5s ease-out;
+                a {
+                    padding: 20px 0;
+                    display: block;
+                }
                 &:nth-child(1)::after {
                     content: "";
                     border-bottom-left-radius: 5px;
