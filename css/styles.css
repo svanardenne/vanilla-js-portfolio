@@ -538,6 +538,8 @@ a {
   margin: 50px auto;
 }
 .projects .project {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   background-color: #282a36;
   border-radius: 5px;
@@ -620,6 +622,19 @@ a {
 .modal-container .project-title,
 .modal-container .project-text {
   padding: 0 15px;
+}
+.modal-container .modal-content-container {
+  display: flex;
+  flex-direction: column;
+}
+.modal-container .modal-content-container .modal-link {
+  text-align: center;
+  align-self: center;
+  background-color: #6272a4;
+  border: 2px solid #bd93f9;
+  border-radius: 2px;
+  padding: 10px 50px;
+  margin-bottom: 16px;
 }
 .modal-container .left-arrow,
 .modal-container .right-arrow {

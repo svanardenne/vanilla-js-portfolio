@@ -34,6 +34,19 @@
         padding: 0 15px;
         
     }
+    .modal-content-container {
+        display: flex;
+        flex-direction: column;
+        .modal-link {
+            text-align: center;
+            align-self: center;
+            background-color: #6272a4;
+            border: 2px solid $purple;
+            border-radius: 2px;
+            padding: 10px 50px;
+            margin-bottom: 16px;
+        }
+    }
     .left-arrow,
     .right-arrow {
         cursor: pointer;

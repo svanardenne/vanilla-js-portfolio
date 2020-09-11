@@ -8,6 +8,8 @@
     gap: 30px;
     margin: 50px auto;
     .project {
+        display: flex;
+        flex-direction: column;
         cursor: pointer;
         background-color: $secondary;
         border-radius: 5px;

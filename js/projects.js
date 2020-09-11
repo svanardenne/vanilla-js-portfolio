@@ -95,11 +95,12 @@ function displayModal(index) {
     let projectText = projectArray[index].projectText;
     content += `
         <div class="project">
-            <a class="project-link" href="${projectLink}" target="_blank">
+            <div class="modal-content-container">
                 <h2 class="project-title">${projectTitle}</h3>
                 <img class="project-image" src="${projectImage}">
                 <p class="project-text">${projectText}</p>
-            </a>
+                <a class="modal-link" href="${projectLink}" target="_blank">Try Demo</a>
+            </div>
             <span class="left-arrow"><</span>
             <span class="right-arrow">></span>
         </div>
@@ -163,7 +164,7 @@ modalWindow.addEventListener('click', (e) => {
         if (modalIndex < 7) {
             modalIndex++;
             modalWindow.innerHTML = displayModal(modalIndex);
-        } else if (modalIndex === 7) {
+        } else if (modalIndex == 7) {
             modalIndex = 0;
             modalWindow.innerHTML = displayModal(modalIndex);
         }
@@ -171,7 +172,7 @@ modalWindow.addEventListener('click', (e) => {
         if (modalIndex > 0) {
             modalIndex--;
             modalWindow.innerHTML = displayModal(modalIndex);
-        } else if (modalIndex === 0) {
+        } else if (modalIndex == 0) {
             modalIndex = 7;
             modalWindow.innerHTML = displayModal(modalIndex);
         }
