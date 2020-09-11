@@ -367,6 +367,7 @@ img {
 
 .container-main {
   grid-area: main-content;
+  margin: 0 15px;
 }
 
 .contact {
@@ -484,7 +485,7 @@ a {
 /*                 About Section                 */
 /* ============================================= */
 .info {
-  margin: 50px 15px;
+  margin: 100px 15px;
 }
 .info .general-info {
   margin-bottom: 50px;
@@ -513,7 +514,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  margin: 50px 15px;
+  margin: 50px auto;
 }
 .projects .project {
   cursor: pointer;
@@ -646,7 +647,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    margin-bottom: 50px;
+    margin: 100px auto;
   }
   .info .general-info {
     margin-right: 30px;
@@ -724,7 +725,7 @@ a {
 
   .info {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 50px auto;
   }
 
   html {

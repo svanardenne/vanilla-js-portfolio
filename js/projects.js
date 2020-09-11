@@ -18,43 +18,43 @@ const projectArray = [
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-2",
-        projectTitle: "Mobile-First Responsive Layout",
+        projectTitle: "Responsive Layout",
         projectImage: "img/project-2.png",
         projectText: 'Personal profile page utilizing floats and media queries for layout and fixed positioning for a sticky footer.'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-3",
-        projectTitle: "Personal Profile",
+        projectTitle: "Signup Form",
         projectImage: "img/project-3.png",
         projectText: 'A personal profile page utilizing basic HTML and CSS'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-4",
-        projectTitle: "Personal Profile",
+        projectTitle: "Grid Layout Project",
         projectImage: "img/project-4.png",
         projectText: 'A personal profile page utilizing basic HTML and CSS'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-5",
-        projectTitle: "Personal Profile",
+        projectTitle: "Interactive Photo Gallery",
         projectImage: "img/project-5.png",
         projectText: 'A personal profile page utilizing basic HTML and CSS'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-6",
-        projectTitle: "Personal Profile",
+        projectTitle: "Word Guessing Game",
         projectImage: "img/project-6.png",
         projectText: 'A personal profile page utilizing basic HTML and CSS'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-7",
-        projectTitle: "Personal Profile",
+        projectTitle: "Dashboard",
         projectImage: "img/project-7.png",
         projectText: 'A personal profile page utilizing basic HTML and CSS'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-8",
-        projectTitle: "Personal Profile",
+        projectTitle: "Employee Directory",
         projectImage: "img/project-8.png",
         projectText: 'A personal profile page utilizing basic HTML and CSS'
     }
@@ -75,7 +75,7 @@ function createCards() {
         let projectText = projectArray[i].projectText;
         inner += `
             <div class="project" data-index="${i}">
-                <h3 class="project-title">${projectTitle}</h3>
+                <h4 class="project-title">${projectTitle}</h4>
                 <img src="${projectImage}">
                 <p class="project-text">${projectText}</p>
             </div>
@@ -96,7 +96,7 @@ function displayModal(index) {
     content += `
         <div class="project">
             <a class="project-link" href="${projectLink}" target="_blank">
-                <h3 class="project-title">${projectTitle}</h3>
+                <h2 class="project-title">${projectTitle}</h3>
                 <img class="project-image" src="${projectImage}">
                 <p class="project-text">${projectText}</p>
             </a>
