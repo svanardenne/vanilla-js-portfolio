@@ -32,6 +32,23 @@ img {
 .container-main {
     grid-area: main-content;
     margin: 0 15px;
+    display: grid;
+    grid-template-areas: 
+    "info info info"
+    "skills skills skills"
+    "projects projects projects";
+}
+
+.info {
+    grid-area: info;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.projects {
+    grid-area: projects;
 }
 
 .contact {

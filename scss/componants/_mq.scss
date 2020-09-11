@@ -77,10 +77,22 @@
     .main-header {
         flex-direction: row;
     }
+    .container-main {
+        grid-template-areas: 
+    "info info info"
+    "skills projects projects"
+    "skills projects projects";
+    }
+    .skills {
+        flex-direction: column;
+        justify-content: space-evenly;
+        .icon-skills {
+            width: 20%;
+        }
+    }
     .projects {
         max-width: 90%;
-        margin: 0 auto 50px auto;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     .title {
         margin-left: 15px;
