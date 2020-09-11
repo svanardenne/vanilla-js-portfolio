@@ -6,7 +6,7 @@
     opacity: 0;
     width: 100vw;
     height: 150vh;
-    background: rgba(133, 120, 207, 0.3);
+    background: rgba(68,71,90, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +38,7 @@
         cursor: pointer;
         font-weight: 1000;
         font-size: 3rem;
-        color: $primary;
+        color: #6272a4;
         position: absolute;
         top: 40%;
         transition: color .5s ease-out;

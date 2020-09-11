@@ -120,7 +120,7 @@ projectLink.addEventListener('click', () => {
     overlay.style.display = "block";
     setTimeout(() => {
         overlay.style.opacity = "1";
-    }, 1);
+    }, 100);
     modalWindow.innerHTML = displayModal(0);
 });
 
@@ -138,7 +138,7 @@ if (projects) {
                 overlay.style.display = "block";
                 setTimeout(() => {
                     overlay.style.opacity = "1";
-                }, 1);
+                }, 100);
                 modalWindow.innerHTML = displayModal(i);
             }
         }
