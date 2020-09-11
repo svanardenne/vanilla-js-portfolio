@@ -73,7 +73,7 @@
                     background: linear-gradient(to right, #50fa7b, #8be9fd);
                 }
                 &:hover {
-                    background-color: lighten($secondary, 10%);
+                    background-color: lighten($secondary, 30%);
                 }
                 a {
                     font-size: 1.2rem;
