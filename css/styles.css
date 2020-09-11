@@ -517,19 +517,35 @@ a {
   }
 }
 /* ============================================= */
-/*                 About Section                 */
+/*                 Info Section                  */
 /* ============================================= */
 .info {
   margin: 100px 15px;
 }
 .info .general-info {
-  margin-bottom: 50px;
+  text-align: center;
 }
 .info .profile-picture {
   margin-top: 50px;
   text-align: center;
 }
 
+/* ============================================= */
+/*                 Skills Section                */
+/* ============================================= */
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills .icon-skills {
+  width: 10%;
+}
+
+/* ============================================= */
+/*                 About Section                 */
+/* ============================================= */
 .about-info {
   margin: 50px 15px;
 }
@@ -540,16 +556,6 @@ a {
 .about-info .profile-image img {
   border: 5px solid #563D7C;
   border-radius: 30px;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.skills .icon-skills {
-  width: 10%;
 }
 
 /* ============================================= */
@@ -708,9 +714,6 @@ a {
     justify-content: space-between;
     align-content: center;
     margin: 100px auto;
-  }
-  .info .general-info {
-    margin-right: 30px;
   }
 
   .projects {
