@@ -524,8 +524,8 @@ a {
   background-image: linear-gradient(to bottom, #282a36, rgba(68, 71, 90, 0.85)), url("../img/van-at-night.jpeg");
   background-position: center;
   background-size: cover;
-  border-top: 1px solid #ff5555;
-  border-bottom: 1px solid #ff5555;
+  border-top: 1px solid #282a36;
+  border-bottom: 1px solid #282a36;
 }
 .info .general-info {
   text-align: center;

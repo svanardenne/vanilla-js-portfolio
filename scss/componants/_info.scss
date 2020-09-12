@@ -11,8 +11,8 @@
                       url("../img/van-at-night.jpeg"); //Taken by Paul Gifford; found on Wikimedia Commons under Creative Commons Attribution-Share Alike 3.0 Unported url (https://upload.wikimedia.org/wikipedia/commons/8/85/Robson_Street_at_night%2C_Vancouver%2C_BC%2C_Canada.JPG)
     background-position: center;
     background-size: cover;
-    border-top: 1px solid #ff5555;
-    border-bottom: 1px solid #ff5555;
+    border-top: 1px solid $secondary;
+    border-bottom: 1px solid $secondary;
     .general-info {
         text-align: center;
         width: 90%;
