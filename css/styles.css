@@ -367,7 +367,6 @@ img {
 
 .container-main {
   grid-area: main-content;
-  margin: 0 15px;
   display: grid;
   grid-template-areas: "info info info" "skills skills skills" "projects projects projects";
 }
@@ -501,45 +500,64 @@ a {
     transform: scale(1);
   }
   20% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   40% {
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
   60% {
-    transform: scale(1.4);
+    transform: scale(1.3);
   }
   80% {
     transform: scale(1.2);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1.1);
   }
 }
 /* ============================================= */
 /*                 Info Section                  */
 /* ============================================= */
 .info {
-  margin: 100px 15px;
+  padding: 100px 0;
+  margin-bottom: 50px;
+  background-image: linear-gradient(to bottom, #282a36, rgba(68, 71, 90, 0.85)), url("../img/van-at-night.jpeg");
+  background-position: center;
+  background-size: cover;
+  border-top: 1px solid #ff5555;
+  border-bottom: 1px solid #ff5555;
 }
 .info .general-info {
   text-align: center;
-}
-.info .profile-picture {
-  margin-top: 50px;
-  text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* ============================================= */
 /*                 Skills Section                */
 /* ============================================= */
 .skills {
+  background-color: #282a36;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+.skills .skills-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  height: 100%;
+  padding-bottom: 20px;
 }
-.skills .icon-skills {
+.skills .skills-container .icon-skills:hover {
+  animation: icon 0.5s ease-out forwards;
+}
+
+.icon-skills {
   width: 10%;
 }
 
@@ -565,7 +583,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  margin: 50px auto;
+  margin: 50px 15px;
 }
 .projects .project {
   display: flex;
@@ -709,11 +727,11 @@ a {
   }
 
   .info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    margin: 100px auto;
+    padding: 150px 0;
+  }
+
+  .icon-skills {
+    width: 5%;
   }
 
   .projects {
@@ -780,26 +798,32 @@ a {
   }
 
   .skills {
+    margin-right: 0;
+    width: 250px;
+  }
+  .skills .skills-container {
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 0;
   }
-  .skills .icon-skills {
+  .skills .skills-container .icon-skills {
     width: 20%;
   }
 
   .projects {
-    max-width: 90%;
+    margin: 0 30px;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .title {
     margin-left: 15px;
-    width: 300px;
+    width: 350px;
   }
 
   .info {
-    max-width: 90%;
-    margin: 50px auto;
+    margin: 0 auto 50px;
+    padding: 250px 0;
+    width: 100%;
   }
 
   html {

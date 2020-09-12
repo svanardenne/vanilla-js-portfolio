@@ -3,12 +3,19 @@
 /* ============================================= */
 
 .info {
-    margin: 100px 15px;
+    padding: 100px 0;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgba(40,42,54, 1),
+                    rgba(68,71,90, .85)),
+                    
+                      url("../img/van-at-night.jpeg"); //Taken by Paul Gifford; found on Wikimedia Commons under Creative Commons Attribution-Share Alike 3.0 Unported url (https://upload.wikimedia.org/wikipedia/commons/8/85/Robson_Street_at_night%2C_Vancouver%2C_BC%2C_Canada.JPG)
+    background-position: center;
+    background-size: cover;
+    border-top: 1px solid #ff5555;
+    border-bottom: 1px solid #ff5555;
     .general-info {
         text-align: center;
-    }
-    .profile-picture {
-        margin-top: 50px;
-        text-align: center;
+        width: 90%;
+        margin: 0 auto;
     }
 }

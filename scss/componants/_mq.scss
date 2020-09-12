@@ -12,11 +12,10 @@
         }
     }
     .info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        margin: 100px auto;
+        padding: 150px 0;
+    }
+    .icon-skills {
+        width: 5%;
     }
     .projects {
         
@@ -81,23 +80,29 @@
     "skills projects projects";
     }
     .skills {
-        flex-direction: column;
-        justify-content: space-evenly;
-        .icon-skills {
-            width: 20%;
+        margin-right: 0;
+        width: 250px;
+        .skills-container {
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0;
+            .icon-skills {
+                width: 20%;
+            }
         }
     }
     .projects {
-        max-width: 90%;
+        margin: 0 30px;
         grid-template-columns: repeat(3, 1fr);
     }
     .title {
         margin-left: 15px;
-        width: 300px;
+        width: 350px;
     }
     .info {
-        max-width: 90%;
-        margin: 50px auto;
+        margin: 0 auto 50px;
+        padding: 250px 0;
+        width: 100%;
     }
     html {
         margin-top: 110px;

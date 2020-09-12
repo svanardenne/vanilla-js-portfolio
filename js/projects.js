@@ -12,7 +12,7 @@ let modalIndex = 0;
 const projectArray = [
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-1",
-        projectTitle: "Personal Profile",
+        projectTitle: "Personal Profile Project",
         projectImage: "img/project-1.png",
         projectText: 'A personal profile page utilizing basic HTML and CSS'
     },
