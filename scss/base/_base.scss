@@ -30,6 +30,7 @@ img {
 }
 
 .container-main {
+    overflow: hidden;
     grid-area: main-content;
     display: grid;
     grid-template-areas: 

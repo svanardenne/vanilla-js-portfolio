@@ -366,6 +366,7 @@ img {
 }
 
 .container-main {
+  overflow: hidden;
   grid-area: main-content;
   display: grid;
   grid-template-areas: "info info info" "skills skills skills" "projects projects projects";
@@ -521,6 +522,8 @@ a {
 .info {
   padding: 100px 0;
   margin-bottom: 50px;
+  opacity: 0;
+  transition: opacity 1s ease-out;
   background-image: linear-gradient(to bottom, #282a36, rgba(68, 71, 90, 0.85)), url("../img/van-at-night.jpeg");
   background-position: center;
   background-size: cover;
@@ -531,6 +534,14 @@ a {
   text-align: center;
   width: 90%;
   margin: 0 auto;
+}
+.info .general-info .info-title {
+  transition: transform 2s ease-out;
+  transform: translateX(-5000px);
+}
+.info .general-info .info-text {
+  opacity: 0;
+  transition: opacity 3s ease-out;
 }
 
 /* ============================================= */
@@ -544,6 +555,8 @@ a {
   align-items: center;
   border-radius: 5px;
   margin: 0 15px;
+  transition: transform 2s ease-out;
+  transform: translateX(5000px);
 }
 .skills .skills-container {
   display: flex;
@@ -584,6 +597,8 @@ a {
   grid-template-columns: 1fr;
   gap: 30px;
   margin: 50px 15px;
+  transition: transform 2s ease-out;
+  transform: translateY(5000px);
 }
 .projects .project {
   display: flex;
@@ -800,6 +815,8 @@ a {
   .skills {
     margin-right: 0;
     width: 250px;
+    transition: transform 2s ease-out;
+    transform: translateY(5000px);
   }
   .skills .skills-container {
     flex-direction: column;
@@ -811,6 +828,7 @@ a {
   }
 
   .projects {
+    transform: translateX(5000px);
     margin: 0 30px;
     grid-template-columns: repeat(3, 1fr);
   }

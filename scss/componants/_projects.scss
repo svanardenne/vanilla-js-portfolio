@@ -7,6 +7,8 @@
     grid-template-columns: 1fr;
     gap: 30px;
     margin: 50px 15px;
+    transition: transform 2s ease-out;
+    transform: translateY(5000px);
     .project {
         display: flex;
         flex-direction: column;

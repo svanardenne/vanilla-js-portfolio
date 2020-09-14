@@ -135,7 +135,6 @@ if (projects) {
                 const card = e.target.closest(".project");
                 const index = card.getAttribute('data-index');
                 modalIndex = index;
-                console.log(modalIndex);
                 overlay.style.display = "block";
                 setTimeout(() => {
                     overlay.style.opacity = "1";
