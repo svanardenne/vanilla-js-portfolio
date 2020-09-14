@@ -69,7 +69,6 @@ const projectArray = [
 function createCards() {
     let inner = '';
     for (let i = 0; i < projectArray.length; i++) {
-        let projectLink = projectArray[i].projectLink;
         let projectTitle = projectArray[i].projectTitle;
         let projectImage = projectArray[i].projectImage;
         let projectText = projectArray[i].projectText;
@@ -81,9 +80,7 @@ function createCards() {
             </div>
         `
     }
-    if (projects) {
-        projects.innerHTML = inner;
-    }
+    projects.innerHTML = inner;
 }
 
 //Modal Content
