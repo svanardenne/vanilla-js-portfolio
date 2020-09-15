@@ -766,9 +766,10 @@ a {
   top: 40%;
   transition: color 0.5s ease-out;
 }
-.modal-container .left-arrow:hover,
+.modal-container .left-arrow:hover, .modal-container .left-arrow:hover,
+.modal-container .right-arrow:hover,
 .modal-container .right-arrow:hover {
-  color: #5a5e77;
+  color: #828fb7;
 }
 .modal-container .left-arrow {
   left: -30px;

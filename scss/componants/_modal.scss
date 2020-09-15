@@ -62,11 +62,12 @@
         position: absolute;
         top: 40%;
         transition: color .5s ease-out;
+        &:hover,
+        &:hover {
+        color: lighten(#6272a4, 10%);
     }
-    .left-arrow:hover,
-    .right-arrow:hover {
-        color: lighten($primary, 10%)
     }
+    
     .left-arrow {
         left: -30px;
     }
