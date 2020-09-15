@@ -32,20 +32,6 @@
     html {
         margin-top: 185px;
     }
-    .about-info {
-        margin: 50px 15px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        .about-general-info {
-            flex-basis: 50%;
-            margin-right: 15px;
-        }
-        .profile-image {
-            flex-basis: 40%;
-            margin: 0 auto;
-        }
-    }
     .modal-container {
         width: 70%;
         .left-arrow,
@@ -60,9 +46,10 @@
         }
     }
     .about-info {
+        margin: 50px 15px;
         display: grid;
         grid-template-columns: (repeat(2, 1fr));
-        grid-template-rows: (repeat(2, 1fr));
+        grid-template-rows: 450px 1fr;
         .about-general-info {
             grid-row: 1 / span 1;
         }
@@ -71,11 +58,17 @@
             grid-column: 1 / span 2;
         }
         .profile-image {
-            width: 70%;
             grid-column: 2 / span 1;
             grid-row: 1 / span 1;
+            width: 100%;
+            text-align: right;
+            img {
+                width: auto;
+                max-height: 450px;
+            }
         }
     }
+    
 }
 
 @media(min-width: 1024px) {
@@ -135,12 +128,36 @@
         }
     }
     .about-info {
-        .about-skills {
-            grid-column: 1 / span 1;
+        grid-template-columns: 60% 1fr;
+        width: 60%;
+        max-width: 1380px;
+        margin-left: auto;
+        margin-right: auto;
+        .about-general-info {
+            grid-column: 1 / span ;
+            padding-right: 30px;
         }
         .profile-image {
-            grid-row: 1 / span 2;
-            width: 50%;
+            grid-column: 2 / span 1;
+
         }
+        .about-skills {
+            grid-column: 1 / span 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .about-skills-item {
+        flex-direction: column;
+    }
+    .about-skills-title {
+        margin-left: 0;
+    }
+    .about-skills-title {
+        margin-top: 0;
+        margin-bottom: 5px;
     }
 }
