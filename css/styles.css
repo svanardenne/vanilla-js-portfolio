@@ -361,6 +361,10 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 .main-header {
   grid-area: main-header;
 }
@@ -435,7 +439,6 @@ a {
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 .main-header .nav .nav-list {
-  list-style: none;
   padding: 0;
 }
 .main-header .nav .nav-list .nav-item {
@@ -591,6 +594,19 @@ a {
 .about-info .profile-image img {
   border: 5px solid #282a36;
   border-radius: 30px;
+}
+
+.about-skills-list {
+  padding: 15px 0;
+}
+
+.about-skills-item {
+  display: flex;
+  padding-left: 0;
+}
+
+.about-skills-title {
+  margin-left: 15px;
 }
 
 /* ============================================= */

@@ -1,14 +1,13 @@
 /* ============================================= */
 /*                   Base                        */
 /* ============================================= */
+
 * {
     box-sizing: border-box;
 }
-
 html {
     margin-top: 300px;
 }
-
 body {
     background-color: $primary;
     color: $off-white;
@@ -24,7 +23,9 @@ img {
     width: 100%;
     height: auto;
 }
-
+ul {
+    list-style: none;
+}
 .main-header {
     grid-area: main-header;
 }
