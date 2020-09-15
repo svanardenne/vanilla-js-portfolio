@@ -750,6 +750,11 @@ a {
   border-radius: 2px;
   padding: 10px 50px;
   margin-bottom: 16px;
+  transition: background-color 0.5s ease-out, border 0.5s ease-out;
+}
+.modal-container .modal-content-container .modal-link:hover {
+  background-color: #7280ad;
+  border: 2px solid #9f63f6;
 }
 .modal-container .left-arrow,
 .modal-container .right-arrow {

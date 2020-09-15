@@ -45,6 +45,12 @@
             border-radius: 2px;
             padding: 10px 50px;
             margin-bottom: 16px;
+            transition: background-color .5s ease-out,
+                        border .5s ease-out;
+        }
+        .modal-link:hover {
+            background-color: lighten(#6272a4, 5%); 
+            border: 2px solid darken($purple, 10%);
         }
     }
     .left-arrow,
