@@ -666,7 +666,7 @@ a {
   padding: 0 15px;
 }
 .projects .project:hover {
-  transform: scale(1.02) rotate(2deg);
+  transform: scale(1.01) rotate(0.4deg);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -708,7 +708,7 @@ a {
   opacity: 0;
   width: 100vw;
   height: 150vh;
-  background: rgba(68, 71, 90, 0.4);
+  background: rgba(18, 19, 24, 0.95);
   position: fixed;
   top: 0;
   left: 0;
@@ -754,7 +754,7 @@ a {
 .modal-container .left-arrow,
 .modal-container .right-arrow {
   cursor: pointer;
-  font-weight: 1000;
+  font-weight: 700;
   font-size: 3rem;
   color: #6272a4;
   position: absolute;
@@ -775,8 +775,8 @@ a {
 .modal-container .left-arrow::selection,
 .modal-container .project-image::selection,
 .modal-container .project-text::selection,
-.modal-container .project-title::selection {
-  color: none;
+.modal-container .project-title::selection,
+.modal-container .modal-link::selection {
   background: none;
 }
 

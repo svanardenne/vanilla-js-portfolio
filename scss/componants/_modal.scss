@@ -6,7 +6,7 @@
     opacity: 0;
     width: 100vw;
     height: 150vh;
-    background: rgba(68,71,90, 0.4);
+    background: rgba(18, 19, 24, 0.95);
     position: fixed;
     top: 0;
     left: 0;
@@ -50,7 +50,7 @@
     .left-arrow,
     .right-arrow {
         cursor: pointer;
-        font-weight: 1000;
+        font-weight: 700;
         font-size: 3rem;
         color: #6272a4;
         position: absolute;
@@ -71,8 +71,8 @@
     .left-arrow::selection,
     .project-image::selection,
     .project-text::selection,
-    .project-title::selection {
-        color: none;
+    .project-title::selection,
+    .modal-link::selection {
         background: none;
     }
 }

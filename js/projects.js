@@ -96,11 +96,11 @@ function displayModal(index) {
         <div class="project">
             <div class="modal-content-container">
                 <h2 class="project-title">${projectTitle}</h3>
-                <img class="project-image" src="${projectImage}">
+                <img class="project-image" src="${projectImage}" alt="${projectTitle}">
                 <p class="project-text">${projectText}</p>
                 <a class="modal-link" href="${projectLink}" target="_blank">Project Page</a>
             </div>
-            <span class="left-arrow"><</span>
+            <span class="left-arrow">&lt;</span>
             <span class="right-arrow">></span>
         </div>
     `
