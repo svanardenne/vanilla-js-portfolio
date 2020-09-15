@@ -27,17 +27,19 @@ function translateYNeutral(element) {
 
 
 window.addEventListener('load', () => {
-    opacityFull(info);
-    translateXNeutral(infoTitle);
-    translateXNeutral(projectsContainer);
-    setTimeout(() => {opacityFull(infoText)}, 2000);
-    console.log(window.innerWidth);
-    if (window.innerWidth >= 1024) {
-        translateYNeutral(skillsContainer);
+    if (info) {
+        opacityFull(info);
+        translateXNeutral(infoTitle);
+        setTimeout(() => {opacityFull(infoText)}, 2000);
         translateXNeutral(projectsContainer);
+        if (window.innerWidth >= 1024) {
+            translateYNeutral(skillsContainer);
+            translateXNeutral(projectsContainer);
+        }
+        if (window.innerWidth < 1024) {
+            translateXNeutral(skillsContainer);
+            translateYNeutral(projectsContainer);
+        }
     }
-    if (window.innerWidth < 1024) {
-        translateXNeutral(skillsContainer);
-        translateYNeutral(projectsContainer);
-    }
+    
 });

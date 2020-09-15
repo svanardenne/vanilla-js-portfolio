@@ -80,7 +80,9 @@ function createCards() {
             </div>
         `
     }
-    projects.innerHTML = inner;
+    if (projects) {
+        projects.innerHTML = inner;
+    }
 }
 
 //Modal Content
@@ -96,7 +98,7 @@ function displayModal(index) {
                 <h2 class="project-title">${projectTitle}</h3>
                 <img class="project-image" src="${projectImage}">
                 <p class="project-text">${projectText}</p>
-                <a class="modal-link" href="${projectLink}" target="_blank">Try Demo</a>
+                <a class="modal-link" href="${projectLink}" target="_blank">Project Page</a>
             </div>
             <span class="left-arrow"><</span>
             <span class="right-arrow">></span>

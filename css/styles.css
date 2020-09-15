@@ -543,6 +543,9 @@ a {
   opacity: 0;
   transition: opacity 3s ease-out;
 }
+.info .about-link {
+  color: #bd93f9;
+}
 
 /* ============================================= */
 /*                 Skills Section                */
@@ -585,7 +588,7 @@ a {
   margin: 0 auto;
 }
 .about-info .profile-image img {
-  border: 5px solid #bd93f9;
+  border: 5px solid #282a36;
   border-radius: 30px;
 }
 
@@ -743,6 +746,12 @@ a {
 
   .info {
     padding: 150px 0;
+  }
+  .info .info-title {
+    font-size: 50px;
+  }
+  .info .info-text {
+    font-size: 25px;
   }
 
   .icon-skills {
