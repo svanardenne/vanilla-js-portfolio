@@ -3,6 +3,9 @@
 /* ============================================= */
 
 @media(min-width: 768px) {
+    .container-main {
+        margin-top: 0;
+    }
     .nav-list {
         display: flex;
         flex-direction: row;
@@ -65,11 +68,12 @@
         }
         .about-skills {
             grid-row: 2 / span 1;
+            grid-column: 1 / span 2;
         }
         .profile-image {
             width: 70%;
-            grid-column: 2;
-            grid-row: 1 / span 2;
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
         }
     }
 }
@@ -79,6 +83,8 @@
         flex-direction: row;
     }
     .container-main {
+        margin-top: -5px;
+        padding-bottom: 50px;
         grid-template-areas: 
     "info info info"
     "skills projects projects"
@@ -129,7 +135,11 @@
         }
     }
     .about-info {
+        .about-skills {
+            grid-column: 1 / span 1;
+        }
         .profile-image {
+            grid-row: 1 / span 2;
             width: 50%;
         }
     }
