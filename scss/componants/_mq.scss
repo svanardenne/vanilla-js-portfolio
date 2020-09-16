@@ -100,7 +100,6 @@
     .projects {
         transform: translateX(5000px);
         margin: 0 30px;
-        grid-template-columns: repeat(3, 1fr);
     }
     .title {
         margin-left: 15px;
@@ -159,5 +158,11 @@
     .about-skills-title {
         margin-top: 0;
         margin-bottom: 5px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
