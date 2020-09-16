@@ -594,7 +594,7 @@ a {
 }
 .about-info .profile-image img {
   border: 5px solid #282a36;
-  border-radius: 30px;
+  border-radius: 30%;
 }
 
 .about-skills {
