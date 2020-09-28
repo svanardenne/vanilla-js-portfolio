@@ -172,10 +172,10 @@ modalWindow.addEventListener('click', (e) => {
     const rightArrow = document.querySelector('.right-arrow');
     const leftArrow = document.querySelector('.left-arrow');
     if (e.target === rightArrow) {
-        if (modalIndex < 9) {
+        if (modalIndex < projectArray.length -1) {
             modalIndex++;
             modalWindow.innerHTML = displayModal(modalIndex);
-        } else if (modalIndex == 9) {
+        } else if (modalIndex == projectArray.length -1) {
             modalIndex = 0;
             modalWindow.innerHTML = displayModal(modalIndex);
         }
@@ -184,7 +184,7 @@ modalWindow.addEventListener('click', (e) => {
             modalIndex--;
             modalWindow.innerHTML = displayModal(modalIndex);
         } else if (modalIndex == 0) {
-            modalIndex = 9;
+            modalIndex = projectArray.length -1;
             modalWindow.innerHTML = displayModal(modalIndex);
         }
     }
