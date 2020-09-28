@@ -123,11 +123,12 @@ window.addEventListener('load', createCards());
 
 //Adds modal window to screen on click for the project link
 projectLink.addEventListener('click', () => {
+    modalIndex = 0;
     overlay.style.display = "block";
     setTimeout(() => {
         overlay.style.opacity = "1";
     }, 100);
-    modalWindow.innerHTML = displayModal(0);
+    modalWindow.innerHTML = displayModal(modalIndex);
 });
 
 //Adds modal window to screen on click for the project cards
