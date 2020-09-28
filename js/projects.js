@@ -58,6 +58,12 @@ const projectArray = [
         projectImage: "img/project-8.png",
         projectText: 'An employee directory with information generated randomly from randomuser.me using the Fetch API'
     }
+    {
+        projectLink: "http://svanardenne.github.io/fullstack-project-1",
+        projectTitle: "Random Quote Generator",
+        projectImage: "img/fs-project-1.png",
+        projectText: 'A random quote generator using arrays, object literals; complete with timer'
+    }
 ]
 
 
