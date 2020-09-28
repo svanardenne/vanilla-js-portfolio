@@ -63,6 +63,12 @@ const projectArray = [
         projectTitle: "Random Quote Generator",
         projectImage: "img/fs-project-1.png",
         projectText: 'A random quote generator using arrays, object literals; complete with timer'
+    },
+    {
+        projectLink: "http://svanardenne.github.io/fullstack-project-2",
+        projectTitle: "Student Directory",
+        projectImage: "img/fs-project-2.png",
+        projectText: 'A student directory using data pagination and filtering techniques'
     }
 ]
 
@@ -166,10 +172,10 @@ modalWindow.addEventListener('click', (e) => {
     const rightArrow = document.querySelector('.right-arrow');
     const leftArrow = document.querySelector('.left-arrow');
     if (e.target === rightArrow) {
-        if (modalIndex < 8) {
+        if (modalIndex < 9) {
             modalIndex++;
             modalWindow.innerHTML = displayModal(modalIndex);
-        } else if (modalIndex == 8) {
+        } else if (modalIndex == 9) {
             modalIndex = 0;
             modalWindow.innerHTML = displayModal(modalIndex);
         }
@@ -178,7 +184,7 @@ modalWindow.addEventListener('click', (e) => {
             modalIndex--;
             modalWindow.innerHTML = displayModal(modalIndex);
         } else if (modalIndex == 0) {
-            modalIndex = 8;
+            modalIndex = 9;
             modalWindow.innerHTML = displayModal(modalIndex);
         }
     }
