@@ -11,28 +11,10 @@ let modalIndex = 0;
 //Array with project card info
 const projectArray = [
     {
-        projectLink: "http://svanardenne.github.io/techdegree-project-1",
-        projectTitle: "Personal Profile Project",
-        projectImage: "img/project-1.png",
-        projectText: 'A personal profile page utilizing basic HTML and CSS'
-    },
-    {
-        projectLink: "http://svanardenne.github.io/techdegree-project-2",
-        projectTitle: "Responsive Layout",
-        projectImage: "img/project-2.png",
-        projectText: 'Personal profile page utilizing floats and media queries for layout and fixed positioning for a sticky footer'
-    },
-    {
         projectLink: "http://svanardenne.github.io/techdegree-project-3",
         projectTitle: "Online Registration Form",
         projectImage: "img/project-3.png",
         projectText: 'A responsive form using flexbox'
-    },
-    {
-        projectLink: "http://svanardenne.github.io/techdegree-project-4",
-        projectTitle: "Grid Layout Project",
-        projectImage: "img/project-4.png",
-        projectText: 'A layout project using flexbox, Sass, and CSS'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-5",
@@ -44,7 +26,7 @@ const projectArray = [
         projectLink: "http://svanardenne.github.io/techdegree-project-6",
         projectTitle: "Word Guessing Game",
         projectImage: "img/project-6.png",
-        projectText: 'Work guessing game created using vanilla JavaScript'
+        projectText: 'Word guessing game created using vanilla JavaScript'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-7",
@@ -69,6 +51,12 @@ const projectArray = [
         projectTitle: "Student Directory",
         projectImage: "img/fs-project-2.png",
         projectText: 'A student directory using data pagination and filtering techniques'
+    },
+    {
+        projectLink: "http://svanardenne.github.io/elder-gods-brewing",
+        projectTitle: "React.js Landing Page",
+        projectImage: "img/elder-gods-landing.png",
+        projectText: 'Landing page created with React.js and Bootstrap'
     }
 ]
 
