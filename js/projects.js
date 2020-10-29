@@ -23,10 +23,10 @@ const projectArray = [
         projectText: 'An interactive photo gallery utilizing Jquery, Sass, and a Lightbox plugin'
     },
     {
-        projectLink: "http://svanardenne.github.io/techdegree-project-6",
-        projectTitle: "Word Guessing Game",
-        projectImage: "img/project-6.png",
-        projectText: 'Word guessing game created using vanilla JavaScript'
+        projectLink: "http://svanardenne.github.io/fullstack-project-4",
+        projectTitle: "Phrase Hunter",
+        projectImage: "img/fs-project-4.png",
+        projectText: 'Word guessing game created using JavaScript classes'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-7",
