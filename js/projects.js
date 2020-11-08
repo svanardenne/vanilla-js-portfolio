@@ -11,16 +11,22 @@ let modalIndex = 0;
 //Array with project card info
 const projectArray = [
     {
-        projectLink: "http://svanardenne.github.io/techdegree-project-3",
-        projectTitle: "Online Registration Form",
-        projectImage: "img/project-3.png",
-        projectText: 'A responsive form using flexbox'
+        projectLink: "http://svanardenne.github.io/elder-gods-brewing",
+        projectTitle: "React.js Landing Page",
+        projectImage: "img/elder-gods-landing.png",
+        projectText: 'Landing page created with React.js and Bootstrap'
     },
     {
-        projectLink: "http://svanardenne.github.io/techdegree-project-5",
-        projectTitle: "Interactive Photo Gallery",
-        projectImage: "img/project-5.png",
-        projectText: 'An interactive photo gallery utilizing Jquery, Sass, and a Lightbox plugin'
+        projectLink: "http://svanardenne.github.io/fullstack-project-5",
+        projectTitle: "Employee Directory",
+        projectImage: "img/employee-directory.png",
+        projectText: 'An employee directory with information generated randomly from randomuser.me using the Fetch API'
+    },
+    {
+        projectLink: "http://svanardenne.github.io/fullstack-project-2",
+        projectTitle: "Student Directory",
+        projectImage: "img/fs-project-2.png",
+        projectText: 'A student directory using data pagination and filtering techniques'
     },
     {
         projectLink: "http://svanardenne.github.io/fullstack-project-4",
@@ -35,10 +41,10 @@ const projectArray = [
         projectText: 'A dashboard designed with focus on CSS grid, CSS flexbox, graph.js, and overall Javascript interactivity.'
     },
     {
-        projectLink: "http://svanardenne.github.io/techdegree-project-8",
-        projectTitle: "Employee Directory",
-        projectImage: "img/project-8.png",
-        projectText: 'An employee directory with information generated randomly from randomuser.me using the Fetch API'
+        projectLink: "http://svanardenne.github.io/techdegree-project-5",
+        projectTitle: "Interactive Photo Gallery",
+        projectImage: "img/project-5.png",
+        projectText: 'An interactive photo gallery utilizing Jquery, Sass, and a Lightbox plugin'
     },
     {
         projectLink: "http://svanardenne.github.io/fullstack-project-1",
@@ -47,16 +53,10 @@ const projectArray = [
         projectText: 'A random quote generator using arrays, object literals; complete with timer'
     },
     {
-        projectLink: "http://svanardenne.github.io/fullstack-project-2",
-        projectTitle: "Student Directory",
-        projectImage: "img/fs-project-2.png",
-        projectText: 'A student directory using data pagination and filtering techniques'
-    },
-    {
-        projectLink: "http://svanardenne.github.io/elder-gods-brewing",
-        projectTitle: "React.js Landing Page",
-        projectImage: "img/elder-gods-landing.png",
-        projectText: 'Landing page created with React.js and Bootstrap'
+        projectLink: "http://svanardenne.github.io/techdegree-project-3",
+        projectTitle: "Online Registration Form",
+        projectImage: "img/project-3.png",
+        projectText: 'A responsive form using flexbox'
     }
 ]
 
