@@ -38,7 +38,7 @@ const projectArray = [
         projectLink: "http://svanardenne.github.io/techdegree-project-7",
         projectTitle: "Dashboard",
         projectImage: "img/project-7.png",
-        projectText: 'A dashboard designed with focus on CSS grid, CSS flexbox, graph.js, and overall Javascript interactivity.'
+        projectText: 'A dashboard designed with focus on CSS grid, CSS flexbox, Chart.js, and overall Javascript interactivity.'
     },
     {
         projectLink: "http://svanardenne.github.io/techdegree-project-5",
