@@ -78,7 +78,7 @@ function createCards() {
                 <img src="${projectImage}">
                 <p class="project-text">${projectText}</p>
             </div>
-        `
+        `;
     }
     if (projects) {
         projects.innerHTML = inner;
@@ -103,7 +103,7 @@ function displayModal(index) {
             <span class="left-arrow">&lt;</span>
             <span class="right-arrow">></span>
         </div>
-    `
+    `;
     return content;
 }
 
