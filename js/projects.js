@@ -53,10 +53,10 @@ const projectArray = [
         projectText: 'A random quote generator using arrays, object literals; complete with timer'
     },
     {
-        projectLink: "http://svanardenne.github.io/techdegree-project-3",
+        projectLink: "http://svanardenne.github.io/fullstack-project-3",
         projectTitle: "Online Registration Form",
-        projectImage: "img/project-3.png",
-        projectText: 'A responsive form using flexbox'
+        projectImage: "img/fullstack-project-3.png",
+        projectText: 'A responsive form using JavaScript validation'
     }
 ]
 
