@@ -15,7 +15,9 @@
     }
 }
 .about-skills {
-    margin-top: 50px;
+    h2 {
+        align-self: flex-start;
+    }
     .about-skills-text {
         flex-basis: 100%;
     }
@@ -24,25 +26,23 @@
     margin-bottom: 50px;
 }
 .about-skills-list {
+    display: flex;
+    flex-wrap: wrap;
     padding: 15px 0;
 }
 .about-skills-item {
     padding-left: 0;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: 50px repeat(2, 1fr);
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 30px;
+    flex-basis: 50%;
 }
 .about-skills-title {
     margin-left: 15px;
-    grid-row: 1 / span 1;
-    grid-column: 2 / span 1;
 }
 .about-icon-skills {
-    width: 50px;
+    width: 40px;
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
 }
