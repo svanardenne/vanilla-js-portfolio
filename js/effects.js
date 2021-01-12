@@ -29,7 +29,8 @@ function translateYNeutral(element) {
 window.addEventListener('load', () => {
     if (info) {
         opacityFull(info);
-        translateXNeutral(infoTitle);
+        translateYNeutral(infoTitle);
+        setTimeout(() => {opacityFull(infoTitle)}, 1000);
         setTimeout(() => {opacityFull(infoText)}, 2000);
         translateXNeutral(projectsContainer);
         if (window.innerWidth >= 1024) {
