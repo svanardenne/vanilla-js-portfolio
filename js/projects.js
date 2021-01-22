@@ -17,7 +17,7 @@ const projectArray = [
         projectText: 'Landing page created with React.js and Bootstrap'
     },
     {
-        projectLink: "http://svanardenne.github.io/fullstack-project-5",
+        projectLink: "http://svanardenne.github.io/Random-User-API-client",
         projectTitle: "Employee Directory",
         projectImage: "img/employee-directory.png",
         projectText: 'An employee directory with information generated randomly from randomuser.me using the Fetch API'
