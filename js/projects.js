@@ -29,7 +29,7 @@ const projectArray = [
         projectText: 'A student directory using data pagination and filtering techniques'
     },
     {
-        projectLink: "http://svanardenne.github.io/fullstack-project-4",
+        projectLink: "http://svanardenne.github.io/Phrase-Hunter",
         projectTitle: "Phrase Hunter",
         projectImage: "img/fs-project-4.png",
         projectText: 'Word guessing game created using JavaScript classes'
