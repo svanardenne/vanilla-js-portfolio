@@ -47,7 +47,7 @@ const projectArray = [
         projectText: 'An interactive photo gallery utilizing Jquery, Sass, and a Lightbox plugin'
     },
     {
-        projectLink: "http://svanardenne.github.io/fullstack-project-1",
+        projectLink: "http://svanardenne.github.io/random-quote-generator",
         projectTitle: "Random Quote Generator",
         projectImage: "img/fs-project-1.png",
         projectText: 'A random quote generator using arrays, object literals; complete with timer'
