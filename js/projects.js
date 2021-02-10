@@ -35,7 +35,7 @@ const projectArray = [
         projectText: 'Word guessing game created using JavaScript classes'
     },
     {
-        projectLink: "http://svanardenne.github.io/techdegree-project-7",
+        projectLink: "http://svanardenne.github.io/web-dashboard",
         projectTitle: "Dashboard",
         projectImage: "img/project-7.png",
         projectText: 'A dashboard designed with focus on CSS grid, CSS flexbox, Chart.js, and overall Javascript interactivity.'
