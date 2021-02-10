@@ -41,7 +41,7 @@ const projectArray = [
         projectText: 'A dashboard designed with focus on CSS grid, CSS flexbox, Chart.js, and overall Javascript interactivity.'
     },
     {
-        projectLink: "http://svanardenne.github.io/techdegree-project-5",
+        projectLink: "http://svanardenne.github.io/lightbox-photo-gallery",
         projectTitle: "Interactive Photo Gallery",
         projectImage: "img/project-5.png",
         projectText: 'An interactive photo gallery utilizing Jquery, Sass, and a Lightbox plugin'
