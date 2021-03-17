@@ -1,3 +1,3 @@
 # Personal Portfolio Site serving on GHpages
 
-## url(https://shaunvanardenne.ca/vanilla-js-portfolio)
+## [Live Site](https://shaunvanardenne.ca/vanilla-js-portfolio)
